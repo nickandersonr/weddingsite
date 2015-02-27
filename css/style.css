@@ -1,1 +1,59 @@
-.big {height: 1000px;}
+#nav {
+    background: transparent;
+}
+#nav.fixed {
+    background: #FFF;
+}
+#nav li {
+    margin-left: .45rem;
+}
+#nav li::after { 
+    content: "|";
+    padding-left: 10px;
+    color: #4d4d4d;
+}
+#nav li:last-child:after {
+  content: '';
+}
+.sub-nav dt.active a, .sub-nav dd.active a, .sub-nav li.active a {
+    border-radius: 0px;
+    font-weight: normal;
+    background: transparent;
+    padding: inherit;
+    cursor: default;
+    color: inherit;
+    text-decoration: underline;
+}
+#nav a {
+    font-family: 'Playball', cursive;
+    font-size: 20px;
+    padding: 0;
+    color: #4d4d4d;
+}
+.sub-nav {
+    width: 456px;
+    margin: 0 auto;
+}
+
+
+#Home {
+    background-image: url('../img/Home.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 800px;
+}
+#Home #logo {
+    margin-top: 152px;
+}
+
+
+
+#Details {
+    background-image: url('../img/Details.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 800px;
+}
+#Details #info {
+    height: 800px;
+}
